@@ -1,0 +1,32 @@
+doctype html
+head
+  title Formulario de Registro
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+  style.
+    .wrapper {
+    width: 400px;
+    margin: 120px auto 0;
+    text-align: center;
+    }
+    .h1 {
+      margin-bottom: 30px;
+    }
+    button {
+      margin-top: 15px;
+    }
+.wrapper
+  p.h1 Formulario de Registro
+  form(method='post')
+    .form-group.row
+      label(for='name') Nombre:
+      input#name.form-control(type='text' name='name' placeholder='Ingrese su nombre' required)
+    .form-group.row
+      label(for='email') Email:
+      input#email.form-control(type='email' name='email' placeholder='Ingrese su Email' required)
+    .form-group.row
+      label(for='password') Contraseña:
+      input#password.form-control(type='password' name='password' placeholder='Ingrese su Password' required)
+    .form-group.row
+      button.btn.btn-primary.btn-block(type='submit') Registrarse

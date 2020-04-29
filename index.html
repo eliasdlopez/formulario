@@ -1,0 +1,22 @@
+<script id="user-template" type="text/x-handlebars-template">
+
+
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Email</td>
+      </tr>
+    <tbody>
+      {{each user}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.email}}</td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+<script src="app.js"></script>
